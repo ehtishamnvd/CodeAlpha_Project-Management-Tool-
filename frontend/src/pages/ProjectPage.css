@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+        body {
+            /* Use a modern, professional font. */
+            font-family: 'Inter', sans-serif;
+            /* Dark, professional background. */
+            background-color: #0d0d0d;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            /* Light gray text for readability on a dark background. */
+            color: #e0e0e0;
+        }
+
+        .project-page {
+            /* Adjust padding for centered content. */
+            padding: 32px 0;
+        }
+
+        .project-page h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 28px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .project-header-card {
+            /* Make the header box smaller and center it. */
+            max-width: 800px;
+            margin: 0 auto 36px auto;
+            /* Add a neon border and shadow effect. */
+            background: rgba(30, 30, 30, 0.85);
+            border: 1px solid #00FFFF;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), inset 0 0 10px rgba(0, 255, 255, 0.3);
+            border-radius: 18px;
+            padding: 32px 36px 22px 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .project-header-card h2 {
+            font-size: 2.3rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        .project-description {
+            color: #b0b0b0;
+            font-size: 1.13rem;
+            margin-top: 8px;
+            margin-bottom: 0;
+        }
+
+        .member-section, .create-task-form {
+            /* A lighter, slightly transparent dark background for sections. */
+            background: rgba(30, 30, 30, 0.85);
+            /* Make the boxes smaller and center them. */
+            max-width: 800px;
+            margin: 0 auto 28px auto;
+            /* Add a neon border and shadow effect. */
+            border: 1px solid #00FFFF;
+            backdrop-filter: blur(5px);
+            padding: 24px 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), inset 0 0 10px rgba(0, 255, 255, 0.3);
+        }
+
+        .member-section h3, .create-task-form h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+
+        .member-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 18px;
+        }
+        .member-chip {
+            display: flex;
+            align-items: center;
+            background: #333333;
+            border-radius: 24px;
+            padding: 8px 18px 8px 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            font-size: 1.05rem;
+            font-weight: 500;
+            transition: box-shadow 0.2s;
+        }
+        .member-chip:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+        }
+        .member-avatar {
+            width: 36px;
+            height: 36px;
+            background: #03dac6;
+            color: #121212;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-right: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        .member-info {
+            margin-right: 10px;
+            font-weight: 600;
+        }
+        .member-email {
+            color: #999999;
+            font-size: 0.97em;
+            font-weight: 400;
+        }
+        .remove-btn {
+            background: #cf6679;
+            color: #fff;
+            border: none;
+            border-radius: 16px;
+            padding: 4px 16px;
+            font-size: 0.98rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .remove-btn:hover {
+            background: #b00020;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        }
+
+        .add-member-form {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .add-member-form input {
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1.5px solid #444;
+            font-size: 1.05rem;
+            background: #2a2a2a;
+            color: #e0e0e0;
+        }
+        .add-member-form button {
+            background: #03dac6;
+            color: #121212;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 22px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .add-member-form button:hover {
+            background: #018786;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        }
+
+        .create-task-form {
+            margin-bottom: 36px;
+            padding: 28px 22px;
+            /* Make the form box smaller and center it. */
+            max-width: 800px;
+            margin: 0 auto 36px auto;
+            /* Add a neon border and shadow effect. */
+            background: rgba(30, 30, 30, 0.85);
+            border: 1px solid #00FFFF;
+            backdrop-filter: blur(5px);
+            border-radius: 14px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), inset 0 0 10px rgba(0, 255, 255, 0.3);
+        }
+        .create-task-form h3 {
+            color: #ffffff;
+            font-size: 1.18rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+        .create-task-form input,
+        .create-task-form textarea,
+        .create-task-form select {
+            display: block;
+            width: 100%;
+            margin-bottom: 14px;
+            padding: 12px 14px;
+            border-radius: 8px;
+            border: 1.5px solid #444;
+            font-size: 1.05rem;
+            background: #2a2a2a;
+            color: #e0e0e0;
+            transition: border 0.2s;
+        }
+        .create-task-form input:focus,
+        .create-task-form textarea:focus,
+        .create-task-form select:focus {
+            border: 1.5px solid #03dac6;
+            outline: none;
+        }
+        .create-task-form button {
+            background: #03dac6;
+            color: #121212;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 28px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .create-task-form button:hover {
+            background: #018786;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        }
+
+        .task-board {
+            /* Make the task board smaller and center it. */
+            max-width: 1200px;
+            margin: 40px auto 0 auto;
+            display: flex;
+            gap: 36px;
+            justify-content: space-between;
+        }
+        .task-column {
+            flex: 1;
+            background: rgba(30, 30, 30, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
+            padding: 22px 14px;
+            border-radius: 18px;
+            min-height: 360px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+            transition: box-shadow 0.2s, background 0.2s;
+        }
+        .task-column h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: #ffffff;
+        }
+        .task-card {
+            background: #2a2a2a;
+            padding: 18px 14px 14px 14px;
+            margin-bottom: 18px;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            transition: box-shadow 0.2s, border-left 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+        .task-card:hover {
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .task-card .status-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 6px;
+            height: 100%;
+            border-radius: 14px 0 0 14px;
+        }
+        .task-card.todo .status-bar {
+            background: #ffc107;
+        }
+        .task-card.inprogress .status-bar {
+            background: #007bff;
+        }
+        .task-card.done .status-bar {
+            background: #28a745;
+        }
+        .task-card h4 {
+            margin: 0 0 8px 0;
+            font-size: 1.08rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        .task-card p {
+            margin: 5px 0;
+            font-size: 1.01rem;
+            color: #b0b0b0;
+        }
+        .task-card .task-actions {
+            display: flex;
+            gap: 16px;
+            margin-top: 12px;
+        }
+        .task-card .task-actions button {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-size: 20px;
+            color: #03dac6;
+            transition: color 0.2s;
+        }
+        .task-card .task-actions button:hover {
+            color: #018786;
+        }
+        .task-card .task-actions .comment-btn {
+            color: #00FFFF;
+        }
+        .task-card .task-actions .comment-btn:hover {
+            color: #00BFFF;
+        }
+
+        /* NEW: Neon style for the comment section. */
+        .comments-section {
+            background: #1e1e1e;
+            padding: 12px;
+            margin-top: 15px;
+            border-radius: 10px;
+            border: 1px solid #00FFFF;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+        /* New class to hide the comments section by default */
+        .comments-section.hidden {
+            display: none;
+        }
+        .comments-section h5 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+            color: #00FFFF;
+        }
+        .comments-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 10px 0;
+            font-size: 0.9rem;
+            color: #e0e0e0;
+        }
+        .comments-list li {
+            background: #2a2a2a;
+            padding: 8px 12px;
+            margin-bottom: 6px;
+            border-radius: 8px;
+        }
+        .comment-input-container {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        .comment-input {
+            flex-grow: 1;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1.5px solid #444;
+            font-size: 1rem;
+            background: #2a2a2a;
+            color: #e0e0e0;
+        }
+        .comment-input::placeholder {
+            color: #888;
+        }
+        .comment-input:focus {
+            border-color: #00FFFF;
+            outline: none;
+        }
+        .send-comment-btn {
+            background: #03dac6;
+            color: #121212;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .send-comment-btn:hover {
+            background: #018786;
+        }
+
+        .task-date-input {
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1.5px solid #444;
+            font-size: 1rem;
+            background: #2a2a2a;
+            color: #e0e0e0;
+        }
+        .task-due-date {
+            color: #cf6679;
+            font-weight: 600;
+            font-size: 0.98rem;
+            margin: 4px 0 0 0;
+        }
+
+        .task-priority-select {
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1.5px solid #444;
+            font-size: 1rem;
+            background: #2a2a2a;
+            color: #e0e0e0;
+        }
+        .priority-badge {
+            display: inline-block;
+            padding: 4px 14px;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+            margin-right: 8px;
+            letter-spacing: 0.5px;
+        }
+        .priority-badge.high {
+            background: #cf6679;
+            color: #fff;
+        }
+        .priority-badge.medium {
+            background: #ffc107;
+            color: #2d2d2d;
+        }
+        .priority-badge.low {
+            background: #03dac6;
+            color: #121212;
+        }
+
+        .task-file-input {
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1.5px solid #444;
+            font-size: 1rem;
+            background: #2a2a2a;
+            color: #e0e0e0;
+        }
+        .task-attachments {
+            margin: 8px 0 4px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .attachment-link {
+            display: inline-block;
+            background: #333333;
+            color: #03dac6;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 0.97rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        .attachment-link:hover {
+            background: #03dac6;
+            color: #121212;
+        }

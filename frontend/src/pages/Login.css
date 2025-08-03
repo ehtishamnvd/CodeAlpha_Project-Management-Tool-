@@ -1,0 +1,70 @@
+/* Login.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    /* Neon themed dark border and shadow */
+    border: 1px solid #00FFFF;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), inset 0 0 10px rgba(0, 255, 255, 0.3);
+    border-radius: 18px;
+    /* Dark background */
+    background-color: rgba(30, 30, 30, 0.85);
+    /* All text is white and bold */
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    /* Lighter border for visibility */
+    border: 1.5px solid #444;
+    border-radius: 8px;
+    /* Dark background for input fields */
+    background-color: #2a2a2a;
+    /* Text color is inherited from the parent (white) */
+    color: #e0e0e0;
+    font-size: 1rem;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    /* Neon accent color */
+    background-color: #03dac6;
+    color: #121212;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #018786;
+}
+
+.login-container a {
+    /* Neon accent for links */
+    color: #00FFFF;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}

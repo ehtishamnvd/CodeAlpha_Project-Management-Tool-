@@ -1,0 +1,50 @@
+.register-container {
+            max-width: 400px;
+            margin: 80px auto;
+            padding: 30px;
+            border: 1px solid #444;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+        .register-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .register-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #666;
+            border-radius: 5px;
+            background-color: #2a2a2a;
+            color: inherit;
+        }
+        .register-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .register-container button:hover {
+            background-color: #45a049;
+        }
+        .register-container p {
+            margin-top: 15px;
+            text-align: center;
+        }
+        .register-container a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .register-container a:hover {
+            text-decoration: underline;
+        }
